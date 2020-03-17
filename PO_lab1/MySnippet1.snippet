@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Collection-T</Title>
+    <Author>Yulia Trishkina</Author>
+    <Shortcut>clt</Shortcut>
+    <Description>Insert Collection-T</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>name</ID>
+        <Default>c</Default>
+      </Literal>
+      <Literal>
+        <ID>type</ID>
+        <Default>int</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="CSharp">
+      <![CDATA[Collection<$type$> $name$ = new Collection<$type$>();]]>
+    </Code>
+    <Imports>
+      <Import>
+        <Namespace>System.Collections.ObjectModel</Namespace>
+      </Import>
+    </Imports>
+  </Snippet>
+</CodeSnippet>

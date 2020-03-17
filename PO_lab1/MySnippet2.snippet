@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Switch</Title>
+    <Author>Yulia Trishkina</Author>
+    <Shortcut>swt</Shortcut>
+    <Description>Switch-Case</Description>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>name</ID>
+        <Default>variable</Default>
+      </Literal>
+      <Literal>
+        <ID>figure</ID>
+        <Default>rectangle</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="CSharp">
+      <![CDATA[
+      switch($name$){
+        case "$figure$":
+          $selected$;
+          break;
+      }$end$]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

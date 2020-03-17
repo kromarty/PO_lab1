@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>ForEach</Title>
+    <Author>YuliaTrishkina</Author>
+    <Shortcut>fore</Shortcut>
+    <Description>foreach-snippet</Description>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>var</ID>
+        <Default>i</Default>
+      </Literal>
+      <Literal>
+        <ID>collection</ID>
+        <Default>collection</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="CSharp">
+      <![CDATA[
+      foreach(var $var$ in $collection$){
+        $selected$
+      };
+      $end$
+      ]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

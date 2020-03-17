@@ -1,0 +1,25 @@
+﻿<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>заголовок</Title>
+    <Author>автор</Author>
+    <Shortcut>ярлык</Shortcut>
+    <Description>описание</Description>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>имя</ID>
+        <Default>значение</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="XML">
+      <![CDATA[<test>
+      <name>$имя$</name>
+      $selected$ $end$</test>]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Try-Catch-Finally</Title>
+    <Author>Yulia Trishkina</Author>
+    <Shortcut>tcf</Shortcut>
+    <Description>Try-Catch-Finally</Description>
+    <SnippetTypes>
+      <SnippetType>SurroundsWith</SnippetType>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>comment1</ID>
+        <Default>Возникло исключение</Default>
+      </Literal>
+      <Literal>
+        <ID>comment2</ID>
+        <Default>Блок finally</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="CSharp">
+      <![CDATA[
+      try {
+        $selected$
+      }
+      catch {
+        Console.WriteLine("$comment1$");
+      }
+      finally{
+        Console.WriteLine("$comment2$");
+      };
+      $end$
+      ]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>
