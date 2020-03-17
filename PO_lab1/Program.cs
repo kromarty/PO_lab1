@@ -20,12 +20,26 @@ namespace PO_lab1
         
         static void Main(string[] args)
         {
-            Triangle triangle = new Triangle();
-            Console.WriteLine("Enter a figure ");
+            
+            Console.WriteLine("Enter a figure: ");
             string figure = Console.ReadLine();
-            Console.WriteLine("Enter parameters with space delimeter ");
-            string parameters = Console.ReadLine();
-            Console.WriteLine(FigureChoose.GetArea(figure, parameters));
+
+            Console.WriteLine("Enter what you want to count:(a-area/p-perimeter) ");
+            string input = Console.ReadLine();
+
+            switch (input)
+            {
+                case "p":
+                    Console.WriteLine("Enter parameters with space delimeter ");
+                    string parameters = Console.ReadLine();
+                    Console.WriteLine(FigureChoose.GetPerimeter(figure, parameters)); ;
+                    break;
+                case "a":
+                    Console.WriteLine("Enter parameters with space delimeter ");
+                    string aParameters = Console.ReadLine();
+                    Console.WriteLine(FigureChoose.GetArea(figure, aParameters));
+                    break;
+            }
             Console.ReadKey();
         }
     }

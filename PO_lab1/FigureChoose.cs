@@ -30,5 +30,18 @@
             }
             return "Enter a valid figure!";
         }
+        internal static object GetPerimeter(string figureName, string args)
+        {
+            switch (figureName)
+            {
+                case "square":
+                    Square sq = new Square();
+                    return sq.GetPerimeter(args);
+                case "circle":
+                    Circle circle = new Circle();
+                    return circle.GetPerimeter(args);
+            }
+            return "No such option for this figure!";
+        }
     }
 }
